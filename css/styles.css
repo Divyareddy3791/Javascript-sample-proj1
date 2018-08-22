@@ -1,0 +1,1168 @@
+﻿@charset "utf-8";
+
+/*--------------------------------------------------------------------------------------------------
+CSS Styles for <new car>.
+
+version:  3
+--------------------------------------------------------------------------------------------------*/
+
+/* =CSS Reset
+--------------------------------------------------------------------------------------------------*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End CSS Reset
+--------------------------------------------------------------------------------------------------*/
+
+/* =Toolkit
+--------------------------------------------------------------------------------------------------*/
+
+/* Micro Clearfix Hack by Nicholas Gallagher (http://nicolasgallagher.com/micro-clearfix-hack/) */
+
+/* For modern browsers */ 
+.cf:before, .cf:after { content: ""; display: table; }
+.cf:after { clear: both; }
+
+/* general purpose classes */
+.clear {
+	clear: both;
+	overflow: hidden;
+	width: 100%;
+}
+
+/* End Toolkit
+--------------------------------------------------------------------------------------------------*/
+
+html, body {
+	height: 100%;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1280px;
+}
+
+.wrapper {
+	position: relative;
+	background: url(../images/bg1.png) no-repeat center top;
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+	max-width: 1600px;
+}
+.wrapper1 {
+	background: url(../images/wrap-bg1.png) no-repeat center top;
+}
+.wrapper2 {
+	background: url(../images/wrap-bg2.png) no-repeat center top #000202;
+}
+.wrapper3 {
+	background: url(../images/wrap-bg3.png) no-repeat center top #000202;
+}
+
+/* =Typography
+--------------------------------------------------------------------------------------------------*/
+
+/* Setting up the fonts */
+
+body {
+	font: 14px/20px  Arial, Helvetica, sans-serif;
+	color: #4b4b4b;
+	background: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+
+/* End Typography
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Links
+--------------------------------------------------------------------------------------------------*/
+a {
+	outline: none;
+	text-decoration: none;
+	color:#b41124;
+}
+a:hover {
+	text-decoration: underline;
+}
+img {
+	max-width: 100%;
+	height: auto;	
+}
+/* End Links
+--------------------------------------------------------------------------------------------------*/
+
+/* =Header
+--------------------------------------------------------------------------------------------------*/
+
+header {
+	position: relative;
+	z-index: 99999;
+	width: 100%;
+}
+nav {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+	width: 60%;
+	border-bottom: 1px solid #fff;
+	padding: 40px 0 30px;
+	height: 30px;
+}
+nav ul {
+	position: relative;
+	float: left;
+	width: 100%;
+}	
+nav ul li {
+	position: relative;
+	float: left;
+	padding: 0 0 0 12.5%;	
+}
+nav ul li:first-child {
+	padding-left: 0;	
+}
+nav ul li a {
+	float: left;
+	font: 24px/30px 'ralewaymedium';
+	color: #fff;
+	letter-spacing: 4px;		
+}
+nav ul li a:hover, nav ul li a.active, nav ul > li:hover > a {
+	text-decoration: none;
+	color: #f42434;	
+}
+/*nav ul li:hover ul {
+	display: block;	
+}*/
+nav ul li ul {
+	display: none;
+	position: absolute;
+	top: 65px;
+	left: 0;
+	width: 295px;
+	padding: 10px 0;
+	background: url(../images/trans-bg.png) repeat;
+	z-index: 9999;
+}
+nav ul li ul li {
+	clear: both;	
+}
+nav ul li ul li:first-child {
+	padding-left: 12.5%;	
+}
+nav ul li ul li a {
+	display: block;
+	font-size: 14px;
+	letter-spacing: 2px;
+	line-height: 34px;	
+}
+.nav-head-line {
+	display: none;	
+}
+
+.logo {
+	clear: both;
+	margin: 66px auto 0;
+	display: block;
+	width: 32%;	
+}
+.logo1 {
+	margin-top: 35px;	
+}
+.logo img {
+	display: block;	
+}
+.signup {
+	position: relative;
+	float: right;
+	padding: 20px 6% 0 0;
+	width: 225px;
+}	
+.signup1 {
+	float: none;
+	margin: 0 auto;
+	width: 225px;
+	padding-right: 0;
+	padding-top: 60px;	
+}
+.signup h3 {
+	font: 24px/30px 'ralewaymedium';
+	color: #fff;
+	letter-spacing: 4px;	
+}
+.signup a {
+	display: block;
+	border: 2px solid #fff;
+	text-align: center;
+	font: 24px/46px 'ralewaylight';
+	color: #fff;
+	margin: 16px 0 0;
+	letter-spacing: 4px;
+	width: 221px;
+	float: left;	
+}	
+.signup a:hover {
+	text-decoration: none;	
+}
+
+/* End Header
+--------------------------------------------------------------------------------------------------*/
+.main {
+	position: relative;
+	float: left;
+	width: 100%;
+	z-index: 88;	
+}
+.main1 {
+	position: absolute;
+	min-height: 1092px;
+	width: 100%;
+	background: url(../images/bg2.png) no-repeat left bottom;
+	left: 0;
+	bottom: 0;
+	z-index: 99;
+	background-size: 100% 100%;
+}
+.solution-block {
+	position: relative;
+	clear: both;
+	display: block;
+	width: 100%;
+	background: url(../images/red-bg.png) repeat;
+	float: left;
+}
+.top-bg {
+	float: left;
+	width: 100%;
+	background: url(../images/red-top.png) no-repeat center top;
+	height: 407px;	
+}
+.bottom-bg {
+	position: relative;
+	float: left;
+	width: 100%;
+	background: url(../images/red-bottom.png) no-repeat center bottom;
+	height: 504px;	
+	text-align: center;
+}
+.bottom-bg img {
+	padding: 50px 0 0;	
+}
+.solution-block h3 {
+	display: block;
+	margin: -50px 0 0;
+	text-align: center;	
+	font: 36px/50px 'ralewaybold';
+	color: #fff;
+	letter-spacing: 4px;
+	padding: 0 4% 20px 4%;	
+	background: url(../images/divider-line.png) no-repeat center bottom;
+
+}
+.video-block {
+	position: relative;
+	text-align: center;
+	margin: 62px 0 0;
+	z-index: 999;	
+}
+.video-block .play-icon {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -29px 0 0 -26px;	
+}
+
+.pricing-block {
+	position: relative;
+	background: url(../images/bg3.png) no-repeat center top;
+	width: 100%;
+	float: left;
+	min-height: 1450px;
+	margin-top: -503px;
+	z-index: 77;
+}
+.heading {
+	position: absolute;
+	bottom: 37px;
+	left: 0;
+	background: url(../images/heading-bg1.png) no-repeat right top;
+	width: 470px;
+}
+.heading h2 {
+	font: 36px/125px 'ralewaybold';
+	color: #fff;
+	letter-spacing: 4px;
+	text-align: right;
+	padding-right: 66px;	
+}
+.content {
+	float: right;
+	width: 43%;
+	text-align: center;
+	margin: 380px 6% 0 0;
+}
+.content h3 {
+	font: 36px/50px 'ralewaybold';
+	color: #484848;
+	letter-spacing: 4px;
+	padding: 10px 0;	
+}
+.content p {
+	font: 26px/40px 'ralewaymedium';
+	color: #484848;
+	letter-spacing: 4px;
+}
+
+.incentives-block {
+	position: relative;
+	background: url(../images/bg4.png) no-repeat center top;
+	width: 100%;
+	float: left;
+	min-height: 1436px;
+	margin-top: -522px;
+	z-index: 88;
+}
+.image1 {
+	position: absolute;
+	left: 0;
+	top: -28%;
+	width: 83%;
+	z-index: 999999;	
+}
+.content1 {
+	float: none;
+	margin: 520px auto 0;	
+}
+.content1 h3, .content1 p {
+	color: #aaa9a9;	
+}
+.insight-block {
+	position: relative;
+	background: url(../images/bg5.png) no-repeat center top;
+	width: 100%;
+	float: left;
+	min-height: 1436px;
+	margin-top: -510px;
+	z-index: 88;	
+}
+.image2 {
+	position: absolute;
+	top: 13%;
+	left: 0;
+	width: 70%;	
+}
+.content2 {
+	width: 35%;	
+	margin-top: 200px;
+	margin-right: 4%;
+}
+.content2 h3, .content2 p {
+	color: #fff;
+}
+.advice-block {
+	position: relative;
+	background: url(../images/bg6.png) no-repeat center top;
+	width: 100%;
+	float: left;
+	min-height: 1436px;
+	margin-top: -510px;
+	z-index: 88;	
+}
+.content3 {
+	float: left;
+	margin: 580px 0 0 5%;	
+}
+.content3 h3, .content3 p {
+	color: #fdfdfd;	
+}
+.image3 {
+	position: absolute;
+	right: 0;
+	top: -10%;
+	width: 71%;	
+}
+.forecast-block {
+	background: url(../images/bg7.png) no-repeat center top;
+}
+.content4 {
+	width: 45%;	
+}
+.yourway-block {
+	position: relative;
+	width: 100%;
+	float: left;
+	min-height: 1436px;
+	z-index: 66; 
+	
+}
+.image4 {
+	position: absolute;
+	top: -5%;
+	left: 0;
+	width: 80%;	
+}
+.content5 {
+	margin: -240px 0 0;	
+}
+.management-block {
+	background: url(../images/bg8.png) no-repeat center top;
+}
+.management-block .content3 {
+	width: 60%;	
+}
+.management-block .content3 h3, .management-block .content3 p {
+	color: #aaa9a9;	
+}
+.management-block .content3 p {
+	padding-left: 10%;
+	padding-right: 10%;	
+}
+.connect-block {
+	position: relative;
+	float: left;
+	width: 100%;
+	background: url(../images/bg9.png)  no-repeat center top;
+	margin: -500px 0 0;
+	min-height: 870px;
+}
+.content6 {
+	float: none;
+	width: 220px;
+	margin: 500px auto 0;	
+}
+.content6 ul li {
+	float: left;
+	padding: 0 9%;	
+}
+.backtotop-icon {
+	position: absolute;
+	left: 4%;
+	bottom: 60%;	
+	z-index: 999999;
+	height: 16px;
+}
+.backtotop-icon1 {
+	left: auto;
+	right: 4%;
+	bottom: 38%;	
+}
+.backtotop-icon2 {
+	top: 18%;	
+}
+.backtotop-icon3 {
+	top: 16%;	
+}
+.backtotop-icon4 {
+	bottom: auto;	
+	top: 15%;
+	left: auto;
+	right: 4%;
+}
+.backtotop-icon6 {
+	bottom: 37.5%;	
+}
+.backtotop-icon7 {
+	top: 18%;	
+}
+.backtotop-icon8 {
+	bottom: 15%;	
+}
+.backtotop-icon9 {
+	bottom: 10%;	
+}
+.backtotop-icon10 {
+	bottom: 4%;			
+}
+/* =Main Content
+--------------------------------------------------------------------------------------------------*/
+
+
+/*MEDIA PAGE START HERE
+--------------------------------------------------------------------------------------------------*/
+.mediaBlock {
+	float: left;
+	width: 100%;
+	margin: -100px 0 0;
+	clear:both;
+	position:relative;
+	background: url(../images/inner-bg1.png) no-repeat center top;
+	padding: 330px 0 0;
+	min-height: 1106px;
+}
+.mediaBlock h2{ 
+	font:36px/50px 'ralewaybold';
+	color:#fff;
+	text-align:center;
+}
+.mediaBox {
+	background:#f3f0f0;
+	width: 20%;
+	position:absolute;
+	left:0;
+	top: 26%;
+}
+.mediaBox strong{
+	background:url(../images/mediabox-leftarrow.png) no-repeat 0 0;
+	width:65px;
+	height:125px;
+	position:absolute;
+	right:-65px;
+	top:0;
+}
+
+.mediaBox a{
+	font:20px/24px 'ralewaybold';
+	color:#030303;
+	text-align:right;
+	display:block;
+	padding:39px 0 0;
+	height: 86px;
+	letter-spacing: 2px;
+}
+.mediaBox a:hover {
+	text-decoration: none;	
+}
+.mediaBox1 {
+	background:#f3f0f0;
+	width: 17%;
+	position:absolute;
+	right:0;
+	bottom: 27%;
+}
+.mediaBox1 strong{
+	background:url(../images/mediabox-rightarrow.png) no-repeat 0 0;
+	width:65px;
+	height:125px;
+	position:absolute;
+	left:-65px;
+	top:0;
+}
+.mediaBox1 a{
+	font:20px/24px 'ralewaybold';
+	color:#030303;
+	text-align:left;
+	display:block;
+	padding: 26px 0 0;
+	height: 99px;
+	letter-spacing: 2px;
+}
+.mediaBox1 a:hover {
+	text-decoration: none;	
+}
+.mediaVideoBlock {
+	max-width: 615px;
+	margin:0 auto;	
+	
+}
+
+.mediaVideoBlock p{ 
+	font:20px/30px 'ralewayregular';
+	color:#fff;
+	text-align:center;
+	width:88%;
+	margin:0 auto;
+	display:block;
+	border-bottom:1px solid #fff;
+	padding-bottom:45px;
+	margin-top:20px;
+}
+.mediaVideo {
+	clear:both;
+	position:relative;
+	margin-top:35px;
+}
+.mediaVideo a.mediaPrev {
+	position:absolute;
+	top:38%;
+	left:0;	
+	width:38px;
+	height:80px;
+	float:left;
+}
+.videoPart {
+	position:relative;
+	text-align:center;
+}
+.videoPart a.videoPaly  {
+	position:absolute;
+	left:0;
+	top:50%;
+	margin: -21px auto 0;
+	width: 100%;
+}
+.videoPart a.videoPaly img {
+	margin: 0 auto;	
+}
+
+.mediaVideo a.mediaNext {
+	right:0;
+	left:auto;
+}
+.socialNetwork {
+	clear:both;
+	overflow:hidden;
+	margin-top:30px;
+}
+.socialNetwork ul {
+	width:235px;
+	margin:0 auto;
+}
+.socialNetwork ul li{
+	float:left;
+	margin-right:52px;
+}
+/*MEDIA PAGE END HERE
+--------------------------------------------------------------------------------------------------*/
+
+/*NEWS PAGE STARTS HERE
+--------------------------------------------------------------------------------------------------*/
+
+.newsBlock {
+	position: relative;
+	clear:both;
+	overflow:hidden;
+	background:#f8f6f8;
+	padding-bottom: 150px;
+	background: url(../images/bg10.png) no-repeat center bottom;
+	margin: -200px 0 0;
+	float: left;
+	width: 100%;
+}
+.newsBlock1 {
+	background: url(../images/bg11.png) no-repeat center bottom;
+}
+.newsBlock h3{
+	font:36px/50px 'ralewaybold';
+	color:#191a1b;
+	border-bottom:1px solid #191a1b;
+	width:63%;
+	margin:0 auto;
+	text-align:center;
+	margin-top:45px;
+	padding-bottom:45px;
+}
+.newsPara {
+	margin-top:65px;
+	clear:both;
+	overflow:hidden;
+}
+.newsPara ul {
+	margin:0 auto;
+	clear:both;
+	overflow:hidden;
+}
+.newsPara ul.newspara1 {
+	margin:0 auto;
+	width:66%;
+	margin-top:100px;
+}
+.newsPara ul.newspara1 li { 
+	width:39%;
+}
+.newsPara ul li {
+	float:left;
+	width:26%;
+	margin: 0 3.5%;
+}
+.newsPara ul li h5{
+	font:18px/24px 'ralewayregular';
+	color:#191a1b;
+	text-align:center;
+	letter-spacing:3px;
+}
+.newsPara ul li p{
+	font:18px/30px 'ralewayregular';
+	color:#191a1b;
+	text-align:center;
+}
+.newsPara ul li a{
+	font:18px/50px 'ralewaysemibold';
+	color:#f34250;
+	text-align:center;
+	background:url(../images/readmore-arrow.png) no-repeat 245px center;
+	display:block;
+}
+
+/*NEWS PAGE END HERE
+--------------------------------------------------------------------------------------------------*/
+
+/*MEDAI_PAGE_NEWS  START HERE
+--------------------------------------------------------------------------------------------------*/
+
+.newsContentBlock {
+	clear:both;
+	overflow:hidden;
+	margin-top:140px;
+}
+.newsPart {
+	float: right;
+	width: 84%;
+}
+.newsContentBlock h4{
+	font:54px/56px 'ralewaysemibold';
+	color:#010101;
+	border-bottom:1px solid #010101;
+	padding-bottom:22px;
+	letter-spacing:15px;
+}
+.newsContentBlock h4 span{
+	font:18px/50px 'ralewaysemibold';
+	color:#010101;
+	float:right;
+	padding-top:20px;
+	letter-spacing:4px;
+}
+.newsContentBlock  p{
+	font:24px/30px 'ralewaymedium';
+	color:#010101;
+	letter-spacing:3px;
+	padding: 20px 0;
+}
+
+.insightLinkBlock {
+	clear:both;
+	overflow:hidden;
+	border-top:1px solid #010101;
+}
+.newsCommentLink  {
+	float:left;
+	width: 34%;
+}
+.newsCommentLink  ul li {
+	float:left;
+}
+.newsCommentLink  ul li a{
+	font:18px/102px 'ralewaysemibold';
+	color:#010101;
+	letter-spacing:3px;
+	padding:0 13px;
+	border-left:1px solid #010101;
+}
+.newsCommentLink  ul li:first-child a{
+	border-left:none;
+}
+.newsCommentLink    span{
+	font:18px/102px 'ralewaysemibold';
+	color:#010101;
+	float:right;
+}
+.newsShareLink {
+	float:right;
+	width: 26%;
+}
+.newsShareLink  span {
+	font:18px/102px 'ralewaysemibold';
+	color:#010101;
+	float:left;
+}
+.newsShareLink ul li{
+	float:left;
+	line-height:102px;
+	margin-left:35px;
+}
+.newsShareLink ul li a{
+}
+.newsPostBlock {
+	clear:both;
+	overflow:hidden;
+	border-top: 1px solid #0a0a0a;
+}
+.newsPostBlock1 {
+	display: none;
+}
+.newsPostBlock h4{
+	font:30px/102px 'ralewaysemibold';
+	color:#0a0a0a;
+	border-bottom:1px solid #0a0a0a;
+	letter-spacing:4px;
+}
+.newsPost,.newsPost1 {
+	margin-top:34px;
+	clear: both;
+	overflow:hidden;
+}
+.newsPost1 {
+	margin:0px;
+	margin:34px 0 0 120px;
+	border-bottom:1px solid #010101;
+}
+.newsPost1 .newsPostPara {
+	border-bottom:none;
+}
+.newsPostImg {
+	float:left;
+	width: 7%;
+}
+.newsPostPara {
+	float:left;
+	width: 85%;
+	margin-left: 5%;
+	border-bottom:1px solid #010101;
+	padding-bottom:15px;
+}
+.newsPostPara h5{
+	font:24px/50px 'ralewaysemibold';
+	color:#010101;
+	letter-spacing:3px;
+}
+.newsPostPara h5 span {
+	display:inline-block;
+	float:none;
+	padding-right: 0;
+}
+.newsPostPara h5 span a{ 
+	background:url(../images/REPLIED-bg.png) no-repeat left center;
+	font:20px/50px 'ralewaysemibold';
+	color:#f42434;
+	letter-spacing:3px;
+	margin-left:125px;
+	padding-left:46px;
+	display:inline-block;
+	
+}
+.newsPostPara p{
+	font:24px/28px 'ralewayregular';
+	color:#040404;
+	letter-spacing:3px;
+	margin-bottom: 15px;
+}
+.newsPostPara ul {
+	float: left;
+}
+.newsPostPara ul li{
+	float:left;
+}
+.newsPostPara ul li a{
+	background:url(../images/newpostlink-bg.png) no-repeat left center;
+	font:20px/50px 'ralewaysemibold';
+	color:#56565a;
+	padding:0 20px;
+	float:left;
+}
+.newsPostPara ul li:first-child a {
+	background: none;
+}
+.newsPostPara span{
+	font:20px/50px 'ralewaysemibold';
+	color:#56565a;
+	padding-right: 8%;
+	float:left;
+}
+.newsPostPara  strong{
+	font:20px/50px 'ralewaysemibold';
+	color:#56565a;
+	padding-left:75px;
+	float:left;
+}
+
+/*MEDIA_PAGE_NEW END HERE
+--------------------------------------------------------------------------------------------------*/
+
+/*BLOG PAGE END HERE
+--------------------------------------------------------------------------------------------------*/
+
+.blogBlock {
+	clear:both;
+	overflow:hidden;
+	background: url(../images/inner-bg2.png) no-repeat center bottom;
+	padding-bottom:50px;
+}
+.blogBlock1 {
+	background: url(../images/inner-bg4.png) no-repeat center bottom;
+	padding-bottom: 250px;
+}
+.blogPart {
+	background:url(../images/inner-bg3.png) no-repeat center bottom;
+	padding: 0 8%;
+}
+.blogarrow {
+	width:100px;
+	margin:0 auto;
+	margin-bottom:75px;
+	padding-top: 210px
+}
+.blogarrow a{
+}
+.blogDetails {
+	clear:both;
+	overflow:hidden;
+	border-bottom:1px solid #fff;
+	padding-bottom:24px;
+}
+.blogDetails figure{
+	float:left;	
+}
+.blogDetails span{
+	font:18px/77px 'ralewaysemibold';
+	color:#fff;
+	float:left;
+	margin-left:14px;
+}
+
+
+
+.blogContentBlock {
+	margin-top:0px;
+	margin-top:30px;
+}
+.blogContentBlock h4{
+	font:56px/56px 'ralewaysemibold';
+	color:#fff;
+	letter-spacing:15px;
+	border-bottom:none;
+	padding-bottom:0px;
+}
+.blogContentBlock h4 span{
+	font:18px/50px 'ralewaysemibold';
+	color:#fff;
+	float:right;
+	padding-top:20px;
+	letter-spacing:5px;
+}
+
+.blogContentBlock p{
+	color:#fff; 
+}
+.blogLinkBlock {
+	border-bottom:none;
+	border-top:1px solid #fff;
+}
+
+.blogCommentLink  ul li a{
+	color:#fff;
+	border-left:1px solid #fff;
+}
+.blogCommentLink   span{
+	color:#fff;
+}
+.blogShareLink  {
+	float:left;
+	margin-left:140px;
+	width:300px;
+}
+.blogShareLink  span {
+	color:#fff;	
+}
+.close {
+	float:right;
+	
+}
+.close a{
+	background:url(../images/close-arrow.png) no-repeat right center;
+	font:18px/102px 'ralewayregular';
+	color:#fff;
+	display:block;
+	padding-right:27px;
+}
+.blogPostPara,.blogPost1 {
+	border-bottom:1px solid #fff;
+}
+.blogPostPara p,.blogPostPara h5,.blogPostPara ul li a,.blogPostPara  strong,.blogPostPara span,.blogShareLink span,.blogPostPara h5 span a{
+	color:#fff;
+}
+
+.blogPostPara ul li a{
+	background:url(../images/newpostlink-bg1.png) no-repeat left center;
+}
+.tommorrow strong{
+	font:56px/90px 'ralewaysemibold';
+	color:#fff;
+	letter-spacing:4px;
+}
+/*BLOG PAGE END HERE
+--------------------------------------------------------------------------------------------------*/
+
+/*CONNECT PAGE START HERE
+--------------------------------------------------------------------------------------------------*/
+
+.commitment {
+	border-bottom:1px solid #fff;
+	padding: 120px 0 95px;
+}
+.commitment span{
+	display:block;
+	text-align:center;
+	padding-top:20px;
+	margin-bottom:30px;
+}
+.commitment h4{
+	font:36px/50px 'ralewaybold';
+	color:#fff;
+	text-align:center;
+	letter-spacing:4px;
+}
+.commitment p{
+	font:25px/46px 'ralewayregular';
+	color:#fff;
+	text-align:center;
+	letter-spacing:2px;
+	margin-top:70px;
+}
+.address {
+	clear:both;
+	overflow:hidden;
+}
+.address ul li,.address ul li a{
+	font:25px/46px 'open_sansregular';
+	color:#fff;
+	margin-top:70px;
+	text-align:center;
+	letter-spacing:2px;
+}
+.address ul li strong{
+	font-family:'open_sansbold';
+}
+.connectLink {
+	clear:both;
+	overflow:hidden;
+	margin-top:250px;
+}
+.connectLink h6 {
+	font:40px/40px 'open_sansregular';
+	color:#fff;
+	text-align:center;
+}
+.connectLink ul {
+	width:228px;
+	margin:0 auto;
+	margin-top:60px;
+	padding-left: 50px;
+}
+.connectLink ul li {
+	float:left;
+	margin-right:50px;
+}
+.connectLink a {
+	float: left;
+	width: 64px;	
+}
+
+.connectLink p {
+	font:26px/46px 'open_sansregular';
+	color:#fff;
+	margin-top:320px;
+	text-align:center;
+	padding-bottom: 130px;
+}
+/*CONNECT PAGE END HERE
+--------------------------------------------------------------------------------------------------*/
+/* =End Main Content
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Footer START HERE
+--------------------------------------------------------------------------------------------------*/
+
+footer {
+	clear:both;
+	overflow:hidden;
+	background:#fff;
+	padding-bottom:100px;
+}
+.pearlLogo {
+	margin-top:70px;
+	border-bottom:1px solid #b6b6b8;
+	padding-bottom:72px;
+}
+.pearlLogo figure{
+	width:198px;
+	margin:0 auto;
+}
+.pearlLogo figure{
+	width:198px;
+	margin:0 auto;
+}
+.pearlLogo p{
+	font:18px/24px 'open_sansregular';
+	color:#3c3c3c;
+	text-align:center;
+	margin-top:42px;
+	letter-spacing:3px;
+}
+.footerLogo {
+	margin-top:54px;
+}
+.footerLogo ul li {
+	float:left;
+	margin-left: 240px;
+}
+.footerLogo ul li:first-child {
+	margin:0px;
+}
+/* End Footer ENDS HERE
+--------------------------------------------------------------------------------------------------*/
+
+.signup-block {
+	display: none;
+	position: absolute;
+	background: #fff;
+	width: 450px;
+	padding: 2%;
+	left: -550px;
+	top: 58%;
+}
+.signup-block1 {
+	top: 180px;
+	left: -125px;	
+}
+.signup-block1 strong {
+	display: none;	
+}
+#close {
+	position: absolute;
+	right: 4%;
+	top: 4%;
+	color: #000;
+	cursor: pointer;
+}
+.color h3 {
+	color: #f42434;
+}
+.color a {
+	color: #f42434;
+	border: 1px solid #f42434;
+}
+.signup-block strong {
+	position: absolute;
+	top: 25px;
+	right: -13px;	
+}
